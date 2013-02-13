@@ -185,8 +185,7 @@ Middleware類別：django.middleware.transaction.TransactionMiddleware。
 
 這個middleware 對request/response的處理情形 整合了 資料庫的 COMMIT 跟 ROLLBACK 的功能。如果一個view執行成功，就會執行 COMMIT。如果view引發一個exception， ROLLBACK就會被觸發。
 
-Middleware的順序是很重要的。Middleware模組運作是由外而內的，當送出之後就會存檔，跟預設的Django的行為一樣。Middleware
-
+Middleware
 The order of this middleware in the stack is important. Middleware modules running outside of it run with commit-on-save — the default Django behavior. Middleware modules running inside it (coming later in the stack) will be under the same transaction control as the view functions.
 參閱附錄B來獲得更多關於資料庫交易的資訊。
 
