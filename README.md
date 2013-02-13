@@ -1,3 +1,3 @@
-django-book-chn
+Django Book 中文版翻譯
 ===============
-2009 年 Django Book 翻譯
+這是在 2009 年 學習順手翻譯 Django Book 
